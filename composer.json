@@ -1,0 +1,28 @@
+{
+  "name": "villafinder/butter",
+  "description": "Shared message classes for interoperability between symfony apps",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Villa-Finder",
+      "email": "it@villa-finder.com"
+    },
+    {
+      "name": "Alexandre Bacco",
+      "email": "alexandre.bacco@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Villafinder\\Butter\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.3",
+    "symfony/serializer": "^7.3"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.1"
+  }
+}
