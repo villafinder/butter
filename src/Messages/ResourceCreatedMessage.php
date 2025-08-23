@@ -9,7 +9,7 @@ class ResourceCreatedMessage extends SharedMessage
         public string $resourceId,
         public string $sourceLocale,
         /** @var array<string> */
-        public array $targetLocales = [],
+        public ?array $targetLocales = null,
         public \DateTimeImmutable $createdAt = new \DateTimeImmutable(),
     ) {
     }

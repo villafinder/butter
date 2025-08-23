@@ -10,7 +10,7 @@ class ResourceUpdatedMessage extends SharedMessage
         public string $resourceAttribute,
         public string $sourceLocale,
         /** @var array<string> */
-        public array $targetLocales = [],
+        public ?array $targetLocales = null,
         public \DateTimeImmutable $updatedAt = new \DateTimeImmutable(),
     ) {
     }

@@ -2,6 +2,8 @@
 
 namespace Villafinder\Butter\Messages;
 
+use Symfony\Component\Serializer\Attribute\Ignore;
+
 class SharedMessage
 {
     public const int API_VERSION = 1;
@@ -12,6 +14,7 @@ class SharedMessage
     {
     }
 
+    #[Ignore]
     public function isVersionValid(): bool
     {
         return $this->apiVersion === self::API_VERSION;
